@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathyabama University Extracurricular Activities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background: #575757;
+            border-radius: 5px;
+        }
+
+        #hero {
+            background: url('https://source.unsplash.com/1600x900/?college,students') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+
+        #activities .activity {
+            width: 30%;
+            display: inline-block;
+            margin: 1.5%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        #activities .activity img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #activities .activity:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        form button:hover {
+            background: #575757;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                float: none;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #activities .activity {
+                width: 90%;
+                margin: 5% auto;
+            }
+
+            #hero h2 {
+                font-size: 2.5em;
+            }
+
+            #hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sathyabama University Extracurricular Activities</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#activities"><i class="fas fa-futbol"></i> Activities</a></li>
+                    <li><a href="#events"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Sathyabama University Extracurricular Activities</h2>
+            <p>Engage, Explore, and Excel in a variety of activities!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our college offers a diverse range of extracurricular activities to enhance the overall student experience. From sports and arts to clubs and societies, there's something for everyone to get involved in and make the most out of their college life.</p>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="container">
+            <h2>Our Activities</h2>
+            <div class="activity">
+                <a href="basketball.html">
+                    <img src="https://source.unsplash.com/300x200/?basketball" alt="Basketball">
+                    <h3>Basketball Club</h3>
+                    <p>Join our basketball club to enhance your skills and compete in college tournaments.</p>
+                </a>
+            </div>
+            <div class="activity">
+                <a href="music.html">
+                    <img src="https://source.unsplash.com/300x200/?music" alt="Music Club">
+                    <h3>Music Club</h3>
+                    <p>Express your musical talents and perform in college events and concerts.</p>
+                </a>
+            </div>
+            <div class="activity">
+                <a href="coding.html">
+                    <img src="https://source.unsplash.com/300x200/?coding" alt="Coding Club">
+                    <h3>Coding Club</h3>
+                    <p>Improve your programming skills, participate in hackathons, and build projects.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our upcoming events that will provide opportunities for students to showcase their talents and engage with peers. From sports tournaments to cultural festivals, there's always something exciting happening!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> Email: activities@sathyabama.edu</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 123 University St, Chennai, Tamil Nadu, 600119</p>
+            </div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sathyabama University Extracurricular Activities</p>
+        </div>
+    </footer>
+</body>
+</html>
